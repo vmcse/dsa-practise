@@ -1,0 +1,17 @@
+class Solution(object):
+    def maximumElementAfterDecrementingAndRearranging(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: int
+        """
+        arr = sorted(arr)
+        if arr[0] != 1:
+            arr[0] = 1
+        
+        for i in range(1, len(arr)):
+            if abs(arr[i] - arr[i - 1]) <= 1:
+                continue
+            
+            arr[i] = abs(arr[i - 1]) + 1
+        
+        return arr[-1]
