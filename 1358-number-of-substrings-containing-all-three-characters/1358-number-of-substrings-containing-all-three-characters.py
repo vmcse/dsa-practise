@@ -9,10 +9,6 @@ class Solution(object):
         last_seen = {"a": -1, "b": -1, "c": -1}
         for i in range(n):
             last_seen[s[i]] = i
-
-            if -1 in last_seen.values():
-                continue
-
             count += min(last_seen.values()) + 1
         
         return count
