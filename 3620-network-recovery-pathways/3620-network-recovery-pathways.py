@@ -8,14 +8,14 @@ class Solution(object):
         :rtype: int
         """
         n = len(online)
-
-        adj = [[] for _ in range(n)]
-        max_dist = 0
+        graph = [[] for _ in range(n)]
+        low, high = float('inf'), 0
 
         for u, v, wt in edges:
             if online[u] and online[v]:
-                adj[u].append((v, wt))
-                max_dist = max(max_dist, wt)
+                graph[u].append((v, wt))
+                high = max(high, wt)
+                low = min(low, wt)
 
         def dijkstra(mid):
             INF = float("inf")
@@ -25,20 +25,19 @@ class Solution(object):
             pq = [(0, 0)]  # (distance, node)
 
             while pq:
-                distance, node = heapq.heappop(pq)
+                d, u = heapq.heappop(pq)
 
-                if distance > dist[node]:
+                if d > dist[u]:
                     continue
 
-                if node == n - 1:
+                if u == n - 1:
                     return True
 
-                for v, w in adj[node]:
-                    if w < mid:
+                for v, wt in graph[u]:
+                    if wt < mid:
                         continue
 
-                    new_dist = distance + w
-
+                    new_dist = d + wt
                     if new_dist > k:
                         continue
 
@@ -48,7 +47,6 @@ class Solution(object):
 
             return False
 
-        low, high = 0, max_dist
         ans = -1
 
         while low <= high:
