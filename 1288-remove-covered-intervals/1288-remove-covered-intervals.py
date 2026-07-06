@@ -4,27 +4,15 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        def is_covered(interval, intervals, covered):
-            a, b = interval
-            for i in range(len(intervals)):
-                c, d = intervals[i]
-                if (c, d) in covered or (a == c and b == d):
-                    continue
+        intervals.sort(key=lambda x: (x[0], -x[1]))
+        ans = 0
+        max_end = 0
 
-                if c <= a and b <= d:
-                    return True
-            
-            return False
-
-        n = len(intervals)
-        ans = n
-        covered = set()
-
-        for interval in intervals:
-            if is_covered(interval, intervals, covered):
-                ans -= 1
-                covered.add((interval[0], interval[1]))
-
+        for l, r in intervals:
+            if r > max_end:
+                ans += 1
+                max_end = r
+                
         return ans
 
 
