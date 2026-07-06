@@ -10,20 +10,20 @@ class Solution(object):
         visited = [False] * n
         count = 0
 
-        def bfs(city):
-            q = deque([city])
+        def dfs(city):
+            s = deque([city])
 
-            while q:
-                u = q.popleft()
+            while s:
+                u = s.pop()
                 visited[u] = True
 
                 for v in range(n):
                     if isConnected[u][v] and not visited[v]:
-                        q.append(v)
+                        s.append(v)
         
         for city in range(n):
             if not visited[city]:
-                bfs(city)
+                dfs(city)
                 count += 1
     
         return count
