@@ -1,3 +1,5 @@
+from collections import deque
+
 class Solution(object):
     def findCircleNum(self, isConnected):
         """
@@ -5,37 +7,26 @@ class Solution(object):
         :rtype: int
         """
         n = len(isConnected)
-        parent = [i for i in range(n)]
-        size = [1] * n
+        visited = [False] * n
+        count = 0
 
-        def find(v):
-            while parent[v] != v:
-                v = parent[v]
-            parent[v] = v
-            return v
+        def bfs(city):
+            q = deque([city])
 
-        def union(u, v):
-            a = find(u)
-            b = find(v)
+            while q:
+                u = q.popleft()
+                visited[u] = True
 
-            if a != b:
-                if size[a] < size[b]:
-                    a, b = b, a
-                parent[b] = a
-                size[a] += size[b]
-                return True
-
-            return False
-
-        components = n
-        for i in range(n):
-            for j in range(n):
-                if isConnected[i][j]:
-                    if union(i, j):
-                        components -= 1
+                for v in range(n):
+                    if isConnected[u][v] and not visited[v]:
+                        q.append(v)
         
-        return components
-
+        for city in range(n):
+            if not visited[city]:
+                bfs(city)
+                count += 1
+    
+        return count
 
         
 
