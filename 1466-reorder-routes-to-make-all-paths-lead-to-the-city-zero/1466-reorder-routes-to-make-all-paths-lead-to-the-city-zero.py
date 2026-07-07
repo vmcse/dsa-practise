@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         stk = deque([0])
-        graph = [[] * n for _ in range(n)]
+        graph = [[] for _ in range(n)]
     
         for u, v in connections:
             graph[u].append(v)
@@ -19,7 +19,6 @@ class Solution(object):
         while stk:
             u = stk.pop()
             visited[u] = True
-            p = u
             for v in graph[u]:
                 if not visited[abs(v)]:
                     stk.append(abs(v))
