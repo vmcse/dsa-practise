@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/vmcse/my-leetcode-solutons/tree/master/0322-coin-change) |
 | [0547-number-of-provinces](https://github.com/vmcse/my-leetcode-solutons/tree/master/0547-number-of-provinces) |
 | [0841-keys-and-rooms](https://github.com/vmcse/my-leetcode-solutons/tree/master/0841-keys-and-rooms) |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/vmcse/my-leetcode-solutons/tree/master/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vmcse/my-leetcode-solutons/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/vmcse/my-leetcode-solutons/tree/master/3286-find-a-safe-walk-through-a-grid) |
 ## Graph Theory
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0547-number-of-provinces](https://github.com/vmcse/my-leetcode-solutons/tree/master/0547-number-of-provinces) |
 | [0841-keys-and-rooms](https://github.com/vmcse/my-leetcode-solutons/tree/master/0841-keys-and-rooms) |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/vmcse/my-leetcode-solutons/tree/master/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vmcse/my-leetcode-solutons/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/vmcse/my-leetcode-solutons/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3620-network-recovery-pathways](https://github.com/vmcse/my-leetcode-solutons/tree/master/3620-network-recovery-pathways) |
@@ -93,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0547-number-of-provinces](https://github.com/vmcse/my-leetcode-solutons/tree/master/0547-number-of-provinces) |
 | [0841-keys-and-rooms](https://github.com/vmcse/my-leetcode-solutons/tree/master/0841-keys-and-rooms) |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/vmcse/my-leetcode-solutons/tree/master/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vmcse/my-leetcode-solutons/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 ## Union-Find
 |  |
