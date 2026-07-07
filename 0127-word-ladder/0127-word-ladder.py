@@ -15,7 +15,6 @@ class Solution(object):
             return 0
         
         q = deque([(beginWord, 1)])
-        visited = {beginWord}
 
         while q:
             word, dist = q.popleft()
@@ -31,8 +30,8 @@ class Solution(object):
 
                     next_word = word[:i] + c + word[i+1:]
 
-                    if next_word in wordset and next_word not in visited:
-                        visited.add(next_word)
+                    if next_word in wordset:
+                        wordset.remove(next_word)
                         q.append((next_word, dist + 1))
         
         return 0
