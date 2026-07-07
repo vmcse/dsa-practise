@@ -8,14 +8,11 @@ class Solution(object):
         :rtype: int
         """
         stk = deque([0])
-        graph1 = [[] * n for _ in range(n)]
-        graph2 = [[] * n for _ in range(n)]
-
+        graph = [[] * n for _ in range(n)]
+    
         for u, v in connections:
-            graph1[u].append(v)
-
-            graph2[u].append(v)
-            graph2[v].append(u)
+            graph[u].append(v)
+            graph[v].append(-u)
         
         visited = [False] * n
         count = 0
@@ -23,10 +20,10 @@ class Solution(object):
             u = stk.pop()
             visited[u] = True
             p = u
-            for v in graph2[u]:
-                if not visited[v]:
-                    stk.append(v)
-                    if p not in graph1[v]:
+            for v in graph[u]:
+                if not visited[abs(v)]:
+                    stk.append(abs(v))
+                    if v > 0:
                         count += 1
 
         return count
