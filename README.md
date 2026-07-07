@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/vmcse/my-leetcode-solutons/tree/master/0127-word-ladder) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vmcse/my-leetcode-solutons/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vmcse/my-leetcode-solutons/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Enumeration
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/vmcse/my-leetcode-solutons/tree/master/0127-word-ladder) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vmcse/my-leetcode-solutons/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/vmcse/my-leetcode-solutons/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 ## Sliding Window
@@ -45,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/vmcse/my-leetcode-solutons/tree/master/0127-word-ladder) |
 | [0322-coin-change](https://github.com/vmcse/my-leetcode-solutons/tree/master/0322-coin-change) |
 | [0547-number-of-provinces](https://github.com/vmcse/my-leetcode-solutons/tree/master/0547-number-of-provinces) |
 | [0841-keys-and-rooms](https://github.com/vmcse/my-leetcode-solutons/tree/master/0841-keys-and-rooms) |
