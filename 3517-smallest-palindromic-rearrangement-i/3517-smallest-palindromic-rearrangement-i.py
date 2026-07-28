@@ -1,14 +1,9 @@
 class Solution:
     def smallestPalindrome(self, s: str) -> str:
         n = len(s)
+        freq = Counter(s[:n >> 1])
 
-        if n % 2 == 1:
-            h1 = sorted(s[:n//2])
-            h2 = sorted(s[n//2 + 1:], reverse=True)
+        half = "".join(c * freq[c] for c in ascii_lowercase)
+        mid = s[n >> 1] if n & 1 else ""
 
-            return "".join(h1 + [s[n//2]] + h2)
-
-        h1 = sorted(s[:n//2])
-        h2 = sorted(s[n//2:], reverse=True)
-
-        return "".join(h1 + h2)
+        return half + mid + half[::-1]
